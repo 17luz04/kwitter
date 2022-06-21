@@ -1,7 +1,5 @@
 
 //AÑADE TUS ENLACES DE FIREBASE
-
-
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -19,8 +17,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 
-
-  user_name = localStorage.getItem("user_name");
+user_name = localStorage.getItem("user_name");
 
 document.getElementById("user_name").innerHTML = "¡Hola " + user_name + "!";
 
@@ -59,5 +56,5 @@ function redirectToRoomName(name)
 function logout() {
 localStorage.removeItem("user_name");
 localStorage.removeItem("room_name");
-    window.location = "kwitter.html";
+    window.location = "index.html";
 }
